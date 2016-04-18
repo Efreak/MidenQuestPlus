@@ -208,6 +208,7 @@ _Page.SetTitle = function (Title) {
 _Page.SetupUI = function (Username) {
   _Page.isLoaded = true;
   // Make the container
+  $('#ChatSend').after('<button id="SettingsToggle" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" role="button" aria-disabled="false"><span class="ui-button-text">Settings</span></button>');
   $('#MainPanel').after('<div id="Custom_MainBar"></div>');
   // Set the title
   $('#Custom_MainBar').append('<h1 id="Custom_MainBar_Title"></h1>');
@@ -236,7 +237,14 @@ _Page.SetupUI = function (Username) {
   $(footer).css('border-top', '0px');
 
   // Setup the style
-  _Page.SetStyle( "#Custom_MainBar {" +
+  _Page.SetStyle( "#SettingsToggle {" +
+                  "float:left;" +
+                  "margin-left:5px;" +
+                  "width:50px;" +
+                  "margin-bottom:3px;" +
+                  "font-size: 8pt;" +
+                  "}" +
+                  "#Custom_MainBar {" +
                   "width: 992px;" +
                   "min-height: 90px;" +
                   "display: block;" +
@@ -331,6 +339,10 @@ _Page.SetupUI = function (Username) {
       _Chat.Clear();
       _Chat.ResetTab(4);
     }
+  });
+
+  $("#SettingsToggle").click(function () {
+    $("#Custom_MainBar").toggle();
   });
 
   $( document ).keydown(function(e) {
