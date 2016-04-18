@@ -240,14 +240,14 @@ _Page.SetupUI = function (Username) {
   _Page.SetStyle( "#SettingsToggle {" +
                   "float:left;" +
                   "margin-left:5px;" +
-                  "width:50px;" +
+                  "width:60px;" +
                   "margin-bottom:3px;" +
                   "font-size: 8pt;" +
                   "}" +
                   "#Custom_MainBar {" +
                   "width: 992px;" +
                   "min-height: 90px;" +
-                  "display: block;" +
+                  "display: none;" +
                   "position: relative;" +
                   "margin: auto;" +
                   "color: #ccc;" +
