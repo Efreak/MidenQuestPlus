@@ -239,7 +239,6 @@ _Page.SetupUI = function (Username) {
   _Page.SetStyle( "#Custom_MainBar {" +
                   "width: 992px;" +
                   "min-height: 90px;" +
-                  "max-height: 270px;" +
                   "display: block;" +
                   "position: relative;" +
                   "margin: auto;" +
@@ -251,7 +250,7 @@ _Page.SetupUI = function (Username) {
                   "}" +
                   ".Custom_MainBar_Box {" +
                   "width: 300px;" +
-                  "height: 69px;" +
+                  "height: 120px;" +
                   "border: 1px white solid;" +
                   "padding: 5px;" +
                   "margin: 5px;" +
