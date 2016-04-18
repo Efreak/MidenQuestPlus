@@ -208,7 +208,7 @@ _Page.SetTitle = function (Title) {
 _Page.SetupUI = function (Username) {
   _Page.isLoaded = true;
   // Make the container
-  $('body').prepend('<div id="Custom_MainBar"></div>');
+  $('#MainPanel').after('<div id="Custom_MainBar"></div>');
   // Set the title
   $('#Custom_MainBar').append('<h1 id="Custom_MainBar_Title"></h1>');
   $('#Custom_MainBar_Title').text('MidenQuest+ v0.1');
@@ -246,7 +246,7 @@ _Page.SetupUI = function (Username) {
                   "color: #ccc;" +
                   "background-color: #1A3753;" +
                   "border-radius: 5px 5px 0px 0px;" +
-                  "border-bottom: 1px white solid;" +
+                  "border-top: 1px white solid;" +
                   "padding: 5px;" +
                   "}" +
                   ".Custom_MainBar_Box {" +
